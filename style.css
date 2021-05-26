@@ -1,0 +1,140 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  height: 100%;
+  background: linear-gradient(to right, rgb(34, 33, 33), rgb(50, 50, 75));
+}
+
+main {
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px 20px #22223a;
+  margin: 4cm auto;
+  height: 13cm;
+  width: 13cm;
+  background-color: rgb(58, 71, 83);
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "screen screen screen screen"
+    "clear change modulo divide"
+    "seven eight nine multiplication"
+    "four five six minus"
+    "one two three plus"
+    "cero cero point equals";
+  gap: 7px;
+}
+
+#screen {
+  min-height: 2cm;
+  padding: 0px 10px 3px 5px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 10px;
+  grid-area: screen;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+#clear {
+  grid-area: clear;
+}
+#change {
+  grid-area: change;
+}
+#modulo {
+  grid-area: modulo;
+}
+#divide {
+  grid-area: divide;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#multiplication {
+  grid-area: multiplication;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#minus {
+  grid-area: minus;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#plus {
+  grid-area: plus;
+}
+#cero {
+  grid-area: cero;
+}
+#cero {
+  grid-area: cero;
+}
+#point {
+  grid-area: point;
+}
+#equals {
+  grid-area: equals;
+}
+
+/* ! Button styles */
+.bttn-style {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(34, 33, 33), rgb(50, 50, 75));
+  cursor: pointer;
+  transition: color 0.5s;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.bttn-style:hover {
+  color: dodgerblue;
+}
+
+.bttn-style:active {
+  box-shadow: none;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
